@@ -26,7 +26,7 @@ def star():
     #e a função next() cria um iterador e encontra no dicionário um elemento da lista planet_data que satisfaça a condição.
     star_data = next(item for item in data if item["name"] == name)
     return jsonify({
-        "data": star_data,
+        "data": planet_data,
         "message": "success"
     }), 200
 
